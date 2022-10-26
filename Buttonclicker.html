@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Button clicker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Buttonclicker/general.css">
+  </head>
+
+  <body onclick="checkScreen()" onmousedown="return false" onselectstart="return false"></body>>
+
+    <div class="game-container" id="game-container"></div>
+
+    <button class="click" id="click-me" onclick="checkButton()">Click me</button>
+
+    <p class="counter" id="counter"></p>
+    <p class="points" id="points">0</p>
+    <p class="combo" id="combo"></p>
+
+    <script src="Buttonclicker.js"></script>
+  </body>
+</html>
