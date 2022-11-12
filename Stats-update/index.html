@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Button clicker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Buttonclicker/general.css">
+  </head>
+
+  <body onclick="checkScreen()" onmousedown="return false" onselectstart="return false">
+
+  <div class="menu-container" id="menu-container" onclick="menuStopProp()">
+    <p class="menu-text" id="menu-text">Select difficulty</p>
+    <button class="Child" id="Child" onclick="childDiff()">Child's play</button>
+    <button class="Casual" id="Casual" onclick="casualDiff()">Casual gamer</button>
+    <button class="Hardcore" id="Hardcore" onclick="hardcoreDiff()">Hardcore gamer</button>
+    <button class="Pop-up" id="Pop-up" onclick="pupDiff()">Closing pop-up ads</button>
+    <button class="mute-sound" id="mute-sound" onclick="muteSound()"><img src="sound.svg" class="sound-icon" id="sound-icon"></button>
+    <button class="mute-sfx" id="mute-sfx" onclick="muteSfx()"><img src="sound.svg" class="sfx-icon" id="sfx-icon"></button>
+    <p class="mute-soundtrack" id="mute-soundtrack">Mute soundtrack</p>
+    <p class="mute-sound-effects" id="mute-sound-effects">Mute sound effects</p>
+  </div>
+
+  <div class="game-container" id="game-container"></div>
+
+  <button class="click" id="click-me" onclick="checkButton()"></button>
+
+  <p class="counter" id="counter"></p>
+  <p class="points" id="points"></p>
+  <p class="combo" id="combo"></p>
+  <p class="author" id="author">Developed by - Goose</p>
+
+  <p class="statHeader" id="statHeader"></p>
+  <p class="scoreStat" id="scoreStat"></p>
+  <p class="accuracyStat" id="accuracyStat"></p>
+  <p class="missStat" id="missStat"></p>
+  <p class="vectorDifferenceStat" id="vectorDifferenceStat"></p>
+
+  <script src="Buttonclicker.js"></script>
+  </body>
+
+</html>
